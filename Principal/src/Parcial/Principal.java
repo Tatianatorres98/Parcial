@@ -20,8 +20,20 @@ public class Principal {
         
         Calculador calculador1 = new Calculador();
         Scanner miscanner = new Scanner(System.in);
-        int m,n,o,p;
+        int m=0,n = 0,o=0,p=0;
         System.out.println("Ingrese coordenada x del primer punto");
+        miscanner.nextInt(n);
+        System.out.println("Ingrese coordenada y del primer punto");
+        miscanner.nextInt(m);
+        System.out.println("Ingrese coordenada x del segundo punto");
+        miscanner.nextInt(o);
+        System.out.println("Ingrese coordenada y del segundo punto");
+        miscanner.nextInt(p);
+        
+        System.out.println(calculador1.calcularArea());
+        System.out.println(calculador1.calcularDistancia());
+        System.out.println( calculador1.calcularPendiente());
+        
         
         
     }
